@@ -9,8 +9,8 @@ describe("Player", function(){
       assert.equal(player.y, 50);
       assert.equal(player.height, 10);
       assert.equal(player.width, 10);
-      assert.equal(player.speed, 3);
-      assert.equal(player.speedX, 3);
+      assert.equal(player.speed, 2);
+      assert.equal(player.speedX, 2);
       assert.equal(player.speedY, 0);
     });
 
