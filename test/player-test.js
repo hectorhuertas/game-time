@@ -87,4 +87,17 @@ describe("Player", function(){
       assert.equal(player.speedY, player.speed);
     });
   });
+
+  context('collisions', function(){
+    it('dies', function(){
+      var game = new Game();
+      var player = new Player(game, {});
+      assert.isNotTrue(player.died());
+
+      game.logPosition(player.position());
+      assert(player.died());
+    });
+
+
+  });
 });
