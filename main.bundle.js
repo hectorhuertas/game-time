@@ -53,6 +53,19 @@
 	var canvas = document.getElementById("screen");
 
 	KeyListener.start();
+
+	function startMenu() {
+	  var ctx = canvas.getContext("2d");
+	  var menu = new Image();
+	  menu.src = "./lib/assets/tron_start.png";
+
+	  ctx.drawImage(menu, 250, 250);
+
+	  KeyListener.start();
+	}
+
+	startMenu();
+
 	var game = new Game(canvas.width, canvas.height);
 	requestAnimationFrame(gameLoop);
 
@@ -123,6 +136,10 @@
 	  right: false,
 	  up: false,
 	  down: false,
+	  a: false,
+	  d: false,
+	  w: false,
+	  s: false,
 	  setState: setState
 	};
 
@@ -378,6 +395,7 @@
 
 	var Render = function Render(bodies) {
 	  bodies.forEach(function (body) {
+	    ctx.fillStyle = "white";
 	    ctx.fillRect(body.x, body.y, body.size, body.size);
 	  });
 	};

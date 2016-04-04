@@ -93,6 +93,10 @@
 	  right: false,
 	  up: false,
 	  down: false,
+	  a: false,
+	  d: false,
+	  w: false,
+	  s: false,
 	  setState: setState
 	};
 
