@@ -60,7 +60,6 @@
 	KeyListener.start();
 	var tick = true;
 
-	onePlayer();
 	function onePlayer() {
 	  ctx.clearRect(0, 0, canvas.width, canvas.height);
 	  game = new Game(canvas.width, canvas.height, true);
