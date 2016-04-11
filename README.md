@@ -2,7 +2,7 @@
 
 Authors: Hector Huertas & Marlo Major
 
-[Play online](https://ideabox-hector.herokuapp.com/)
+[Play online](http://hectorhuertas.github.io/snake-tron/)
 
 ## Overview
 
@@ -17,6 +17,8 @@ Snake Tron is a Snake & Tron crossover where players race to collect points with
 * Player One Controls: WASD
 
 * Player Two Controls: Arrow Keys
+
+* In one player mode, AI takes place of Player One
 
 * Collecting 'fruits' awards 1000 points each
 
